@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import {
-  Search,
-  Menu,
-  ShoppingBag,
-  ChevronDown,
-  X,
-} from 'react-feather';
+import { Search, Menu, ShoppingBag, ChevronDown, X } from 'react-feather';
 
 const icons = {
   search: Search,
@@ -33,7 +27,7 @@ const Icon = ({ id, color, size, strokeWidth, ...delegated }) => {
 const Wrapper = styled.div`
   & > svg {
     display: block;
-    stroke-width: ${(p) =>
+    stroke-width: ${p =>
       p.strokeWidth !== undefined ? p.strokeWidth + 'px' : undefined};
   }
 `;
