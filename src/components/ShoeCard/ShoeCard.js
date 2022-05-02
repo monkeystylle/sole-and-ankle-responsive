@@ -85,8 +85,9 @@ const Image = styled.img`
   display: block;
   width: 100%;
   transform-origin: 50% 75%;
-  transition: transform 600ms;
+  transition: transform 600ms, filter 1000ms;
   will-change: transform;
+  filter: brightness(90%);
 
   /*
     - both of this two have to be true
@@ -97,7 +98,8 @@ const Image = styled.img`
     ${Link}:hover &,
     ${Link}:focus & {
       transform: scale(1.1);
-      transition: transform 200ms;
+      transition: transform 200ms, filter 400ms;
+      filter: brightness(100%);
     }
   }
 `;
