@@ -77,7 +77,6 @@ const ImageWrapper = styled.div`
   /* image zooms in on hover focus
       truncate the spill over
   */
-
   overflow: hidden;
 `;
 
@@ -92,7 +91,7 @@ const Image = styled.img`
   /*
     - both of this two have to be true
     - they have to be using a device that has hover capability
-    - and they prefer no animation on settings
+    - and they have no preference on animation on settings
   */
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     ${Link}:hover &,
